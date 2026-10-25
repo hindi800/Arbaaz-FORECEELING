@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="description" content="ARBAAZ FALSE CEILING & POP DESIGNING - Premium false ceiling, POP, cove lighting, CNC jaali, wall panels. Services available all over India. 10+ years experience. 1-Year Warranty.">
+  <title>ARBAAZ FALSE CEILING & POP DESIGNING | Premium Interiors</title>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandgreen: '#0F766E',
+            brandgreenlight: '#10B981',
+            brandgreendark: '#065F46',
+            cream: '#F8FAFC',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============ BASE ============ */
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #F8FAFC;
+      color: #1E293B;
+      font-family: 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* ============ SCROLLBAR ============ */
+    ::-webkit-scrollbar { width: 7px; height: 7px; }
+    ::-webkit-scrollbar-track { background: #E2E8F0; }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #0F766E, #10B981);
+      border-radius: 8px;
+    }
+
+    /* ============ GRADIENTS ============ */
+    .green-gradient { background: linear-gradient(135deg, #0F766E 0%, #10B981 100%); }
+    .green-gradient-soft { background: linear-gradient(135deg, rgba(15,118,110,.10) 0%, rgba(16,185,129,.10) 100%); }
+    .green-text-gradient {
+      background: linear-gradient(135deg, #0F766E 0%, #10B981 60%, #059669 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ============ GLASSMORPHISM ============ */
+    .glass {
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(18px) saturate(160%);
+      -webkit-backdrop-filter: blur(18px) saturate(160%);
+      border: 1px solid rgba(15, 118, 110, 0.16);
+    }
+    .glass-deep {
+      background: rgba(255, 255, 255, 0.58);
+      backdrop-filter: blur(26px) saturate(180%);
+      -webkit-backdrop-filter: blur(26px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.65);
+    }
+    .glass-dark {
+      background: rgba(6, 95, 70, 0.82);
+      backdrop-filter: blur(20px) saturate(160%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+    }
+
+    /* ============ GRADIENT BORDER CARDS ============ */
+    .gradient-border {
+      position: relative;
+      border-radius: 1.5rem;
+      background: #ffffff;
+      isolation: isolate;
+    }
+    .gradient-border::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      padding: 1.5px;
+      border-radius: inherit;
+      background: linear-gradient(135deg, rgba(15,118,110,.65), rgba(16,185,129,.12) 45%, rgba(15,118,110,.65));
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    /* ============ SOFT GREEN GLOW SHADOWS ============ */
+    .glow-green { box-shadow: 0 18px 45px -18px rgba(15, 118, 110, 0.55), 0 6px 18px -8px rgba(16, 185, 129, 0.30); }
+    .glow-green-lg { box-shadow: 0 35px 80px -25px rgba(15, 118, 110, 0.55), 0 12px 30px -14px rgba(16, 185, 129, 0.35); }
+
+    /* ============ KEYFRAME ANIMATIONS ============ */
+    @keyframes floatY {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-14px); }
+    }
+    .animate-float { animation: floatY 5s ease-in-out infinite; }
+    .animate-float-slow { animation: floatY 7.5s ease-in-out infinite; }
+    .animate-float-delayed { animation: floatY 6s ease-in-out infinite; animation-delay: 1.4s; }
+
+    @keyframes glowPulse {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.55), 0 12px 30px -12px rgba(15, 118, 110, 0.65);
+      }
+      50% {
+        box-shadow: 0 0 0 14px rgba(16, 185, 129, 0), 0 12px 34px -12px rgba(15, 118, 110, 0.75);
+      }
+    }
+    .btn-glow { animation: glowPulse 2.8s ease-in-out infinite; }
+
+    @keyframes blobMove {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(28px, -34px) scale(1.08); }
+      66% { transform: translate(-22px, 20px) scale(0.95); }
+    }
+    .animate-blob { animation: blobMove 16s ease-in-out infinite; }
+    .animate-blob-slow { animation: blobMove 22s ease-in-out infinite; animation-delay: 2s; }
+
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marquee 30s linear infinite;
+    }
+
+    @keyframes cardIn {
+      from { opacity: 0; transform: translateY(26px) scale(0.96); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .animate-in {
+      animation: cardIn 0.75s cubic-bezier(0.22, 0.8, 0.25, 1) both;
+    }
+
+    @keyframes shineSweep {
+      0% { transform: translateX(-120%) skewX(-18deg); }
+      100% { transform: translateX(240%) skewX(-18deg); }
+    }
+    .btn-shine { position: relative; overflow: hidden; }
+    .btn-shine::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 45%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.45), transparent);
+      transform: translateX(-120%) skewX(-18deg);
+      pointer-events: none;
+    }
+    .btn-shine:hover::after { animation: shineSweep 0.9s ease; }
+
+    /* ============ CARD HOVER ============ */
+    .card-glow {
+      transition: box-shadow 0.4s ease, transform 0.4s ease, border-color 0.4s ease;
+      box-shadow: 0 4px 18px -6px rgba(15, 118, 110, 0.12);
+    }
+    .card-glow:hover {
+      box-shadow: 0 26px 55px -20px rgba(15, 118, 110, 0.42);
+      transform: translateY(-6px);
+      border-color: rgba(16, 185, 129, 0.45);
+    }
+
+    /* ============ 3D TILT GALLERY ============ */
+    .tilt-card {
+      transform-style: preserve-3d;
+      will-change: transform;
+      transition: transform 0.45s cubic-bezier(0.22, 0.8, 0.25, 1), box-shadow 0.45s ease;
+      box-shadow: 0 10px 30px -18px rgba(15, 118, 110, 0.45);
+    }
+    .tilt-card:hover {
+      box-shadow: 0 38px 70px -28px rgba(15, 118, 110, 0.60);
+    }
+    .gallery-img { transition: transform 0.7s cubic-bezier(0.22, 0.8, 0.25, 1); }
+    .gallery-card:hover .gallery-img { transform: scale(1.10); }
+
+    /* ============ FAQ ============ */
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.45s cubic-bezier(0.22, 0.8, 0.25, 1), padding 0.35s ease;
+    }
+    .faq-item.active .faq-answer { max-height: 420px; padding-bottom: 1.25rem; }
+    .faq-item.active .faq-icon { transform: rotate(180deg); }
+    .faq-icon { transition: transform 0.35s ease; }
+    .faq-item.active { border-color: rgba(16, 185, 129, 0.55) !important; box-shadow: 0 20px 45px -22px rgba(15,118,110,.45); }
+
+    /* ============ SCROLL PROGRESS ============ */
+    #scrollProgress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 100%;
+      transform-origin: 0 50%;
+      transform: scaleX(0);
+      background: linear-gradient(90deg, #0F766E, #10B981, #34D399);
+      z-index: 70;
+      pointer-events: none;
+    }
+
+    /* ============ STICKY MOBILE BAR ============ */
+    .mobile-sticky-bar { display: none; }
+    @media (max-width: 767px) {
+      .mobile-sticky-bar { display: flex; }
+      body { padding-bottom: 74px; }
+    }
+
+    /* ============ HIDE SCROLLBAR ============ */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+    /* ============ REDUCED MOTION ============ */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+      }
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+
+<body class="bg-cream text-slate-800 antialiased overflow-x-hidden">
+
+  <!-- ================= SCROLL PROGRESS BAR ================= -->
+  <div id="scrollProgress"></div>
+
+  <!-- ================= ANNOUNCEMENT BAR (STATIC) ================= -->
+  <div class="bg-brandgreen text-white text-center py-2.5 px-4 relative z-50 shadow-md">
+    <p class="text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 flex-wrap">
+      <i class="fas fa-globe-asia animate-pulse"></i>
+      <span>Services Available All Over India</span>
+      <span class="hidden sm:inline opacity-60">|</span>
+      <span class="hidden sm:inline">Call Now:</span>
+      <a href="tel:9152165328" class="underline decoration-white/40 underline-offset-4 hover:text-white/80 transition">9152165328</a>
+    </p>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="sticky top-0 z-40 glass border-b border-brandgreen/20 shadow-[0_10px_30px_-20px_rgba(15,118,110,0.5)]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+
+        <!-- Brand -->
+        <a href="#top" class="flex items-center gap-2.5 group">
+          <div class="w-9 h-9 md:w-10 md:h-10 rounded-xl green-gradient flex items-center justify-center shadow-md shadow-brandgreen/30 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+            <i class="fas fa-crown text-white text-base md:text-lg"></i>
+          </div>
+          <div class="leading-tight">
+            <span class="font-extrabold text-[11px] sm:text-sm md:text-lg tracking-wide block text-slate-900">ARBAAZ</span>
+            <span class="text-[9px] sm:text-[11px] md:text-xs text-brandgreen font-semibold tracking-widest block">FALSE CEILING &amp; POP DESIGNING</span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-600">
+          <a href="#services" class="hover:text-brandgreen transition-colors relative after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:bg-brandgreen after:transition-all hover:after:w-full">Services</a>
+          <a href="#gallery" class="hover:text-brandgreen transition-colors relative after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:bg-brandgreen after:transition-all hover:after:w-full">Portfolio</a>
+          <a href="#book" class="hover:text-brandgreen transition-colors relative after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:bg-brandgreen after:transition-all hover:after:w-full">Free Site Visit</a>
+          <a href="#contact" class="hover:text-brandgreen transition-colors relative after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:bg-brandgreen after:transition-all hover:after:w-full">Contact</a>
+        </nav>
+
+        <!-- Desktop Actions -->
+        <div class="hidden md:flex items-center gap-3">
+          <a href="tel:9152165328" class="flex items-center gap-2 text-sm font-semibold glass px-4 py-2.5 rounded-full hover:bg-brandgreen/5 transition-all border border-brandgreen/30 text-slate-800">
+            <i class="fas fa-phone-alt text-brandgreen"></i> 9152165328
+          </a>
+          <a href="#book" class="btn-glow btn-shine green-gradient text-white font-bold px-6 py-2.5 rounded-full text-sm shadow-md shadow-brandgreen/30 hover:scale-105 transition-transform duration-300">
+            <i class="fas fa-calendar-check mr-1"></i> Book Free Site Visit
+          </a>
+        </div>
+
+        <!-- Mobile Actions -->
+        <div class="md:hidden flex items-center gap-2">
+          <a href="tel:9152165328" aria-label="Call 9152165328" class="w-9 h-9 rounded-full green-gradient flex items-center justify-center shadow-md shadow-brandgreen/30 active:scale-90 transition">
+            <i class="fas fa-phone-alt text-white text-sm"></i>
+          </a>
+          <a href="#book" class="green-gradient text-white font-bold px-3.5 py-2 rounded-full text-[11px] shadow-md active:scale-95 transition">
+            Book Visit
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="top" class="relative overflow-hidden bg-white">
+    <!-- Decorative blobs -->
+    <div class="absolute top-[-140px] right-[-120px] w-[540px] h-[540px] bg-brandgreen/10 rounded-full blur-[130px] pointer-events-none animate-blob"></div>
+    <div class="absolute bottom-[-160px] left-[-140px] w-[460px] h-[460px] bg-brandgreenlight/10 rounded-full blur-[130px] pointer-events-none animate-blob-slow"></div>
+    <div class="absolute inset-0 opacity-[0.35] pointer-events-none" style="background-image: radial-gradient(rgba(15,118,110,0.10) 1px, transparent 1px); background-size: 26px 26px;"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-24 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+        <!-- Copy -->
+        <div class="text-center lg:text-left" data-aos="fade-up" data-aos-duration="900">
+          <div class="inline-flex items-center gap-2 glass px-3.5 py-1.5 rounded-full text-xs font-semibold mb-6 border border-brandgreen/30 shadow-sm">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brandgreenlight opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-brandgreen"></span>
+            </span>
+            <span class="text-slate-700">Trusted by 500+ Happy Families</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[3.45rem] font-extrabold leading-[1.14] tracking-tight text-slate-900">
+            <span class="font-serif italic font-medium text-brandgreen">Redefining</span> Luxury Spaces with
+            <span class="green-text-gradient">Masterpiece False Ceiling</span> &amp; POP Craftsmanship
+          </h1>
+
+          <p class="mt-5 text-base sm:text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            10+ Years Excellence <span class="text-brandgreen mx-1">|</span> Dust-Free Execution <span class="text-brandgreen mx-1">|</span> Premium Materials <span class="text-brandgreen mx-1">|</span> <span class="font-semibold text-brandgreen">1-Year Warranty</span>
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-3 justify-center lg:justify-start">
+            <a href="#gallery" class="btn-shine green-gradient text-white font-bold px-7 py-3.5 rounded-full shadow-lg shadow-brandgreen/30 hover:shadow-2xl hover:shadow-brandgreen/40 hover:scale-105 transition-all duration-300 flex items-center gap-2">
+              <i class="fas fa-images"></i> Explore Portfolio
+            </a>
+            <a href="https://wa.me/919152165328?text=Hi%20Arbaaz%2C%20I%20am%20interested%20in%20False%20Ceiling%20and%20POP%20Designing%20work.%20Please%20share%20details."
+               target="_blank" rel="noopener"
+               class="glass border border-brandgreen/50 text-slate-800 font-bold px-7 py-3.5 rounded-full hover:bg-brandgreen/5 hover:scale-105 transition-all duration-300 flex items-center gap-2 shadow-sm">
+              <i class="fab fa-whatsapp text-[#25D366] text-lg"></i> WhatsApp Us
+            </a>
+          </div>
+
+          <!-- Counters -->
+          <div class="mt-10 grid grid-cols-3 gap-3 sm:gap-4 max-w-lg mx-auto lg:mx-0">
+            <div class="gradient-border p-3 sm:p-4 text-center shadow-sm" data-aos="zoom-in" data-aos-delay="100">
+              <p class="text-xl sm:text-2xl font-extrabold text-brandgreen" data-count="500" data-suffix="+">0+</p>
+              <p class="text-[10px] sm:text-xs text-slate-500 mt-0.5 font-medium">Projects Done</p>
+            </div>
+            <div class="gradient-border p-3 sm:p-4 text-center shadow-sm" data-aos="zoom-in" data-aos-delay="200">
+              <p class="text-xl sm:text-2xl font-extrabold text-brandgreen" data-count="4.9" data-decimals="1" data-suffix="★">0★</p>
+              <p class="text-[10px] sm:text-xs text-slate-500 mt-0.5 font-medium">Google Rating</p>
+            </div>
+            <div class="gradient-border p-3 sm:p-4 text-center shadow-sm" data-aos="zoom-in" data-aos-delay="300">
+              <p class="text-xl sm:text-2xl font-extrabold text-brandgreen" data-count="100" data-suffix="%">0%</p>
+              <p class="text-[10px] sm:text-xs text-slate-500 mt-0.5 font-medium">On-Time</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual -->
+        <div class="relative" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+          <div class="absolute -inset-5 bg-gradient-to-tr from-brandgreen/25 via-brandgreenlight/15 to-transparent rounded-[2.6rem] blur-2xl"></div>
+
+          <div class="relative rounded-[2rem] overflow-hidden border border-white/70 glow-green-lg animate-float-slow">
+            <img src="https://i.ibb.co/spDcpryq/image13.jpg"
+                 alt="Luxury False Ceiling Showcase by Arbaaz"
+                 class="w-full h-[320px] sm:h-[420px] lg:h-[480px] object-cover"
+                 loading="eager" decoding="async"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=85&w=1200&auto=format&fit=crop';">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent pointer-events-none"></div>
+          </div>
+
+          <!-- Floating chips -->
+          <div class="absolute -left-2 sm:-left-6 top-8 glass-deep rounded-2xl px-4 py-3 shadow-xl flex items-center gap-2.5 animate-float">
+            <i class="fas fa-shield-alt text-brandgreen text-lg"></i>
+            <span class="text-xs font-bold text-slate-800">1-Year Warranty</span>
+          </div>
+          <div class="absolute -right-1 sm:-right-4 bottom-12 glass-deep rounded-2xl px-4 py-3 shadow-xl flex items-center gap-2.5 animate-float-delayed">
+            <i class="fas fa-award text-brandgreen text-lg"></i>
+            <span class="text-xs font-bold text-slate-800">10+ Years Craft</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MARQUEE STRIP ================= -->
+  <div class="bg-brandgreendark text-white py-3.5 overflow-hidden relative">
+    <div class="marquee-track gap-10 whitespace-nowrap text-xs sm:text-sm font-semibold tracking-wider uppercase">
+      <span class="flex items-center gap-10 shrink-0">
+        <span><i class="fas fa-border-all mr-2 text-brandgreenlight"></i>Gypsum False Ceiling</span>
+        <span><i class="fas fa-grip-lines mr-2 text-brandgreenlight"></i>Designer POP Moulding</span>
+        <span><i class="fas fa-lightbulb mr-2 text-brandgreenlight"></i>Cove Lighting</span>
+        <span><i class="fas fa-th mr-2 text-brandgreenlight"></i>CNC Jaali Work</span>
+        <span><i class="fas fa-th-large mr-2 text-brandgreenlight"></i>WPC / PVC Louvers</span>
+        <span><i class="fas fa-tv mr-2 text-brandgreenlight"></i>TV Unit Backdrops</span>
+        <span><i class="fas fa-shield-alt mr-2 text-brandgreenlight"></i>1-Year Warranty</span>
+        <span><i class="fas fa-globe-asia mr-2 text-brandgreenlight"></i>All Over India</span>
+      </span>
+      <span class="flex items-center gap-10 shrink-0" aria-hidden="true">
+        <span><i class="fas fa-border-all mr-2 text-brandgreenlight"></i>Gypsum False Ceiling</span>
+        <span><i class="fas fa-grip-lines mr-2 text-brandgreenlight"></i>Designer POP Moulding</span>
+        <span><i class="fas fa-lightbulb mr-2 text-brandgreenlight"></i>Cove Lighting</span>
+        <span><i class="fas fa-th mr-2 text-brandgreenlight"></i>CNC Jaali Work</span>
+        <span><i class="fas fa-th-large mr-2 text-brandgreenlight"></i>WPC / PVC Louvers</span>
+        <span><i class="fas fa-tv mr-2 text-brandgreenlight"></i>TV Unit Backdrops</span>
+        <span><i class="fas fa-shield-alt mr-2 text-brandgreenlight"></i>1-Year Warranty</span>
+        <span><i class="fas fa-globe-asia mr-2 text-brandgreenlight"></i>All Over India</span>
+      </span>
+    </div>
+  </div>
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services" class="py-16 md:py-24 bg-white relative overflow-hidden">
+    <div class="absolute top-1/3 left-[-160px] w-[400px] h-[400px] bg-brandgreen/5 rounded-full blur-[110px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="inline-block text-xs font-bold tracking-widest text-brandgreen uppercase mb-3 glass px-3 py-1 rounded-full border border-brandgreen/30">What We Craft</span>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900">Our <span class="green-text-gradient">Specialized Services</span></h2>
+        <p class="text-slate-500 mt-3 max-w-2xl mx-auto text-sm sm:text-base">Every ceiling is engineered, layered and finished by specialists — never sub-contracted.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+
+        <div class="gradient-border card-glow p-6 md:p-7" data-aos="zoom-in" data-aos-delay="0">
+          <div class="w-14 h-14 rounded-2xl green-gradient flex items-center justify-center mb-5 shadow-md shadow-brandgreen/30 animate-float">
+            <i class="fas fa-border-all text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-slate-900">Gypsum False Ceiling</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Seamless, water-resistant Saint-Gobain gypsum ceilings for halls, bedrooms and offices.</p>
+        </div>
+
+        <div class="gradient-border card-glow p-6 md:p-7" data-aos="zoom-in" data-aos-delay="100">
+          <div class="w-14 h-14 rounded-2xl green-gradient flex items-center justify-center mb-5 shadow-md shadow-brandgreen/30 animate-float-delayed">
+            <i class="fas fa-grip-lines text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-slate-900">Designer POP Moulding</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Intricate cornices, ceiling roses, panel mouldings &amp; bespoke POP wall designs.</p>
+        </div>
+
+        <div class="gradient-border card-glow p-6 md:p-7" data-aos="zoom-in" data-aos-delay="200">
+          <div class="w-14 h-14 rounded-2xl green-gradient flex items-center justify-center mb-5 shadow-md shadow-brandgreen/30 animate-float-slow">
+            <i class="fas fa-lightbulb text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-slate-900">Cove &amp; Profile LED Lighting</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Seamless cove lighting and profile LED integration for luxurious ambient glow.</p>
+        </div>
+
+        <div class="gradient-border card-glow p-6 md:p-7" data-aos="zoom-in" data-aos-delay="0">
+          <div class="w-14 h-14 rounded-2xl green-gradient flex items-center justify-center mb-5 shadow-md shadow-brandgreen/30 animate-float-slow">
+            <i class="fas fa-th-large text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-slate-900">WPC / PVC Wall Louvers</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Premium WPC &amp; PVC wooden louver panels — durable, termite-proof and stunning.</p>
+        </div>
+
+        <div class="gradient-border card-glow p-6 md:p-7" data-aos="zoom-in" data-aos-delay="100">
+          <div class="w-14 h-14 rounded-2xl green-gradient flex items-center justify-center mb-5 shadow-md shadow-brandgreen/30 animate-float">
+            <i class="fas fa-tv text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-slate-900">TV Unit Backdrops</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Custom TV unit backdrops with integrated lighting and premium finish detailing.</p>
+        </div>
+
+        <div class="gradient-border card-glow p-6 md:p-7" data-aos="zoom-in" data-aos-delay="200">
+          <div class="w-14 h-14 rounded-2xl green-gradient flex items-center justify-center mb-5 shadow-md shadow-brandgreen/30 animate-float-delayed">
+            <i class="fas fa-th text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-slate-900">CNC Jaali Work</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Laser-cut CNC jaali panels for partitions, ceilings, wall art and screens.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+  <section id="gallery" class="py-16 md:py-24 bg-cream relative overflow-hidden">
+    <div class="absolute bottom-[-140px] right-[-120px] w-[420px] h-[420px] bg-brandgreenlight/10 rounded-full blur-[120px] pointer-events-none animate-blob"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center mb-10" data-aos="fade-up">
+        <span class="inline-block text-xs font-bold tracking-widest text-brandgreen uppercase mb-3 glass px-3 py-1 rounded-full border border-brandgreen/30">Signature Projects</span>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900">Our <span class="green-text-gradient">Elite Portfolio</span></h2>
+        <p class="text-slate-500 mt-3 text-sm sm:text-base max-w-2xl mx-auto">Hover any project to feel the depth — every image is a real execution style we deliver.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="flex flex-wrap justify-center gap-2 mb-8" id="galleryTabs" data-aos="fade-up" data-aos-delay="100">
+        <button data-filter="all" class="filter-btn active px-4 py-2 rounded-full text-xs sm:text-sm font-semibold green-gradient text-white shadow-md transition-all duration-300">All</button>
+        <button data-filter="living" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold glass border border-slate-300 hover:border-brandgreen text-slate-700 transition-all duration-300">Living Room</button>
+        <button data-filter="bedroom" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold glass border border-slate-300 hover:border-brandgreen text-slate-700 transition-all duration-300">Bedroom</button>
+        <button data-filter="cove" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold glass border border-slate-300 hover:border-brandgreen text-slate-700 transition-all duration-300">Cove Lights</button>
+        <button data-filter="wall" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold glass border border-slate-300 hover:border-brandgreen text-slate-700 transition-all duration-300">Wall Panels</button>
+        <button data-filter="tv" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold glass border border-slate-300 hover:border-brandgreen text-slate-700 transition-all duration-300">TV Unit / CNC</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6" id="galleryGrid">
+
+        <!-- 1 -->
+        <div class="gallery-item animate-in" data-category="living" style="animation-delay:0.05s;">
+          <div class="gallery-card tilt-card overflow-hidden rounded-2xl relative group border border-slate-200 bg-white">
+            <img src="https://i.ibb.co/fdCFQShq/image1.jpg" alt="Living Room False Ceiling Design"
+                 class="gallery-img w-full h-64 md:h-72 object-cover" loading="lazy" decoding="async"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=85&w=800&auto=format&fit=crop';">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
+              <span class="bg-brandgreen text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Living Room</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="gallery-item animate-in" data-category="bedroom" style="animation-delay:0.12s;">
+          <div class="gallery-card tilt-card overflow-hidden rounded-2xl relative group border border-slate-200 bg-white">
+            <img src="https://i.ibb.co/3YhQGs0Z/image2.jpg" alt="Modern Bedroom POP Ceiling"
+                 class="gallery-img w-full h-64 md:h-72 object-cover" loading="lazy" decoding="async"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1615876234886-fd9a39fda97f?q=85&w=800&auto=format&fit=crop';">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
+              <span class="bg-brandgreen text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Bedroom</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="gallery-item animate-in" data-category="cove" style="animation-delay:0.19s;">
+          <div class="gallery-card tilt-card overflow-hidden rounded-2xl relative group border border-slate-200 bg-white">
+            <img src="https://i.ibb.co/C5Grfn9b/image3.jpg" alt="Cove Lighting False Ceiling"
+                 class="gallery-img w-full h-64 md:h-72 object-cover" loading="lazy" decoding="async"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1540518614846-7eded433c457?q=85&w=800&auto=format&fit=crop';">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
+              <span class="bg-brandgreen text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Cove Lights</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="gallery-item animate-in" data-category="living" style="animation-delay:0.05s;">
+          <div class="gallery-card tilt-card overflow-hidden rounded-2xl relative group border border-slate-200 bg-white">
+            <img src="https://i.ibb.co/ymNzJBJv/image4.jpg" alt="Gypsum Board Ceiling Design"
+                 class="gallery-img w-full h-64 md:h-72 object-cover" loading="lazy" decoding="async"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=85&w=800&auto=format&fit=crop';">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
+              <span class="bg-brandgreen text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Living Room</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="gallery-item animate-in" data-category="cove" style="animation-delay:0.12s;">
+          <div class="gallery-card tilt-card overflow-hidden rounded-2xl relative group border border-slate-200 bg-white">
+            <img src="https://i.ibb.co/ymj6KJxR/image5.jpg" alt="Luxury Profile Light Ceiling"
+                 class="gallery-img w-full h-64 md:h-72 object-cover" loading="lazy" decoding="async"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=85&w=800&auto=format&fit=crop';">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
+              <span class="bg-brandgreen text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Cove Lights</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="gallery-item animate-in" data-category="living" style="animation-delay:0.19s;">
+          <div class="gallery-card tilt-card overflow-hidden rounded-2xl relative group border border-slate-200 bg-white">
+            <img src="https://i.ibb.co/4wfPpMnP/image6.jpg" alt="Hall POP Design"
+                 class="gallery-img w-full h-64 md:h-72 object-cover" loading="lazy" decoding="async"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=85&w=800&auto=format&fit=crop';">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
+              <span class="bg-brandgreen text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Living Room</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="gallery-item animate-in" data-category="wall" style="animation-delay:0.05s;">
+          <div class="gallery-card tilt-card overflow-hidden rounded-2xl relative group border border-slate-200 bg-white">
+            <img src="https://i.ibb.co/QF0tWq9J/image7.jpg" alt="PVC WPC Wall Panel Design"
+                 class="gallery-img w-full h-64 md:h-72 object-cover" loading="lazy" decoding="async"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=85&w=800&auto=format&fit=crop';">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
+              <span class="bg-brandgreen text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Wall Panels</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="gallery-item animate-in" data-category="tv" style="animation-delay:0.12s;">
+          <div class="gallery-card tilt-card overflow-hidden rounded-2xl relative group border border-slate-200 bg-white">
+            <img src="https://i.ibb.co/Nnfc1cV8/image8.jpg" alt="CNC Jaali Design"
+                 class="gallery-img w-full h-64 md:h-72 object-cover" loading="lazy" decoding="async"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1593784991095-a205069470b6?q=85&w=800&auto=format&fit=crop';">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
+              <span class="bg-brandgreen text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">TV Unit / CNC</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="gallery-item animate-in" data-category="tv" style="animation-delay:0.19s;">
+          <div class="gallery-card tilt-card overflow-hidden rounded-2xl relative group border border-slate-200 bg-white">
+            <img src="https://i.ibb.co/zTVhG3yL/image9.jpg" alt="TV Unit Backdrop Design"
+                 class="gallery-img w-full h-64 md:h-72 object-cover" loading="lazy" decoding="async"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?q=85&w=800&auto=format&fit=crop';">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
+              <span class="bg-brandgreen text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">TV Unit / CNC</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="gallery-item animate-in" data-category="bedroom" style="animation-delay:0.05s;">
+          <div class="gallery-card tilt-card overflow-hidden rounded-2xl relative group border border-slate-200 bg-white">
+            <img src="https://i.ibb.co/Y48zG656/image10.jpg" alt="Master Bedroom Ceiling Design"
+                 class="gallery-img w-full h-64 md:h-72 object-cover" loading="lazy" decoding="async"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=85&w=800&auto=format&fit=crop';">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
+              <span class="bg-brandgreen text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Bedroom</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="gallery-item animate-in" data-category="living" style="animation-delay:0.12s;">
+          <div class="gallery-card tilt-card overflow-hidden rounded-2xl relative group border border-slate-200 bg-white">
+            <img src="https://i.ibb.co/r277QnNw/image11.jpg" alt="Dining Area Ceiling Design"
+                 class="gallery-img w-full h-64 md:h-72 object-cover" loading="lazy" decoding="async"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=85&w=800&auto=format&fit=crop';">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
+              <span class="bg-brandgreen text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Living Room</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="gallery-item animate-in" data-category="cove" style="animation-delay:0.19s;">
+          <div class="gallery-card tilt-card overflow-hidden rounded-2xl relative group border border-slate-200 bg-white">
+            <img src="https://i.ibb.co/RksDMx45/image12.jpg" alt="Commercial Grid Ceiling Design"
+                 class="gallery-img w-full h-64 md:h-72 object-cover" loading="lazy" decoding="async"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?q=85&w=800&auto=format&fit=crop';">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
+              <span class="bg-brandgreen text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Cove Lights</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-11" data-aos="fade-up">
+        <a href="https://wa.me/919152165328?text=Hi%20Arbaaz%2C%20I%20am%20interested%20in%20False%20Ceiling%20and%20POP%20Designing%20work.%20Please%20share%20details."
+           target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 glass border border-brandgreen/50 px-6 py-3.5 rounded-full text-sm font-bold text-slate-800 hover:bg-brandgreen/5 hover:scale-105 transition-all duration-300 shadow-sm">
+          <i class="fab fa-whatsapp text-[#25D366] text-lg"></i> Request Full Portfolio on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BOOK FREE SITE VISIT / REQUEST 3D DESIGN ================= -->
+  <section id="book" class="py-16 md:py-24 bg-white relative overflow-hidden">
+    <div class="absolute top-[-120px] left-[-140px] w-[460px] h-[460px] bg-brandgreen/10 rounded-full blur-[120px] pointer-events-none animate-blob-slow"></div>
+    <div class="absolute bottom-[-140px] right-[-120px] w-[420px] h-[420px] bg-brandgreenlight/10 rounded-full blur-[120px] pointer-events-none animate-blob"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+
+        <!-- Left Copy -->
+        <div data-aos="fade-right" data-aos-duration="900">
+          <span class="inline-block text-xs font-bold tracking-widest text-brandgreen uppercase mb-3 glass px-3 py-1 rounded-full border border-brandgreen/30">Free Consultation</span>
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight">
+            Book a <span class="green-text-gradient">Free Site Visit</span> or Request a <span class="green-text-gradient">3D Design</span>
+          </h2>
+          <p class="text-slate-600 mt-4 text-sm sm:text-base leading-relaxed max-w-xl">
+            Share your room details and our team will visit, measure, and present a personalised 3D concept — with material and lighting guidance tailored to your space. No obligation, no pressure.
+          </p>
+
+          <div class="mt-8 space-y-4">
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-xl green-gradient flex items-center justify-center flex-shrink-0 shadow-md shadow-brandgreen/30 animate-float">
+                <i class="fas fa-ruler-combined text-white"></i>
+              </div>
+              <div>
+                <p class="font-bold text-slate-900 text-sm">On-Site Measurement &amp; Consultation</p>
+                <p class="text-slate-500 text-sm">Accurate dimensions, structural checks and design feasibility.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-xl green-gradient flex items-center justify-center flex-shrink-0 shadow-md shadow-brandgreen/30 animate-float-delayed">
+                <i class="fas fa-cube text-white"></i>
+              </div>
+              <div>
+                <p class="font-bold text-slate-900 text-sm">Personalised 3D Concept Preview</p>
+                <p class="text-slate-500 text-sm">See your ceiling before a single board is fixed.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-xl green-gradient flex items-center justify-center flex-shrink-0 shadow-md shadow-brandgreen/30 animate-float-slow">
+                <i class="fas fa-shield-alt text-white"></i>
+              </div>
+              <div>
+                <p class="font-bold text-slate-900 text-sm">1-Year Warranty on Execution</p>
+                <p class="text-slate-500 text-sm">Backed by our written 1-Year Warranty — every project, every time.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 flex flex-wrap gap-2.5">
+            <span class="glass border border-brandgreen/25 rounded-full px-3.5 py-1.5 text-[11px] font-semibold text-slate-700"><i class="fas fa-check text-brandgreen mr-1.5"></i>Response within 15 minutes</span>
+            <span class="glass border border-brandgreen/25 rounded-full px-3.5 py-1.5 text-[11px] font-semibold text-slate-700"><i class="fas fa-check text-brandgreen mr-1.5"></i>Dust-free execution</span>
+            <span class="glass border border-brandgreen/25 rounded-full px-3.5 py-1.5 text-[11px] font-semibold text-slate-700"><i class="fas fa-check text-brandgreen mr-1.5"></i>All over India</span>
+          </div>
+        </div>
+
+        <!-- Right Form -->
+        <div class="gradient-border glow-green-lg p-6 sm:p-8" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-11 h-11 rounded-xl green-gradient flex items-center justify-center shadow-md shadow-brandgreen/30">
+              <i class="fas fa-calendar-check text-white"></i>
+            </div>
+            <div>
+              <h3 class="font-extrabold text-lg text-slate-900 leading-tight">Request Your Free Visit</h3>
+              <p class="text-slate-500 text-xs">Takes less than 30 seconds</p>
+            </div>
+          </div>
+
+          <form id="bookingForm" class="space-y-4" novalidate>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="bName" class="block text-xs font-semibold mb-1.5 text-slate-700">Full Name *</label>
+                <input type="text" id="bName" placeholder="e.g. Rahul Sharma"
+                       class="w-full bg-cream border border-slate-300 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 focus:border-brandgreen focus:ring-2 focus:ring-brandgreen/20 outline-none transition-all text-sm"
+                       required>
+              </div>
+              <div>
+                <label for="bPhone" class="block text-xs font-semibold mb-1.5 text-slate-700">Phone Number *</label>
+                <input type="tel" id="bPhone" placeholder="e.g. 9152165328"
+                       class="w-full bg-cream border border-slate-300 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 focus:border-brandgreen focus:ring-2 focus:ring-brandgreen/20 outline-none transition-all text-sm"
+                       required>
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="bCity" class="block text-xs font-semibold mb-1.5 text-slate-700">City / Area</label>
+                <input type="text" id="bCity" placeholder="e.g. Mumbai"
+                       class="w-full bg-cream border border-slate-300 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 focus:border-brandgreen focus:ring-2 focus:ring-brandgreen/20 outline-none transition-all text-sm">
+              </div>
+              <div>
+                <label for="bDate" class="block text-xs font-semibold mb-1.5 text-slate-700">Preferred Visit Date</label>
+                <input type="date" id="bDate"
+                       class="w-full bg-cream border border-slate-300 rounded-xl px-4 py-3 text-slate-800 focus:border-brandgreen focus:ring-2 focus:ring-brandgreen/20 outline-none transition-all text-sm">
+              </div>
+            </div>
+
+            <div>
+              <label for="bNeed" class="block text-xs font-semibold mb-1.5 text-slate-700">What Do You Need?</label>
+              <select id="bNeed"
+                      class="w-full bg-cream border border-slate-300 rounded-xl px-4 py-3 text-slate-800 focus:border-brandgreen focus:ring-2 focus:ring-brandgreen/20 outline-none transition-all text-sm">
+                <option value="Free Site Visit &amp; Measurement">Free Site Visit &amp; Measurement</option>
+                <option value="3D Design Concept">3D Design Concept</option>
+                <option value="Gypsum False Ceiling">Gypsum False Ceiling</option>
+                <option value="Designer POP Moulding">Designer POP Moulding</option>
+                <option value="Cove &amp; Profile LED Lighting">Cove &amp; Profile LED Lighting</option>
+                <option value="CNC Jaali Work">CNC Jaali Work</option>
+                <option value="WPC / PVC Wall Louvers">WPC / PVC Wall Louvers</option>
+                <option value="TV Unit Backdrop">TV Unit Backdrop</option>
+                <option value="Complete Home Interior Ceiling">Complete Home Interior Ceiling</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="bMessage" class="block text-xs font-semibold mb-1.5 text-slate-700">Tell Us About Your Space</label>
+              <textarea id="bMessage" rows="3" placeholder="e.g. Living room 14x12, want cove lighting with a central POP design"
+                        class="w-full bg-cream border border-slate-300 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 focus:border-brandgreen focus:ring-2 focus:ring-brandgreen/20 outline-none transition-all text-sm resize-none"></textarea>
+            </div>
+
+            <button type="submit"
+                    class="btn-glow btn-shine w-full green-gradient text-white font-bold py-4 rounded-xl shadow-lg shadow-brandgreen/30 hover:shadow-2xl hover:shadow-brandgreen/40 hover:scale-[1.01] transition-all duration-300 flex items-center justify-center gap-2">
+              <i class="fas fa-paper-plane"></i> Request My Free Site Visit
+            </button>
+
+            <p id="bookingFeedback" class="text-sm text-brandgreen mt-1 hidden text-center font-semibold">
+              <i class="fas fa-check-circle mr-1"></i> Request ready! Opening WhatsApp…
+            </p>
+
+            <p class="text-[11px] text-slate-400 text-center leading-relaxed">
+              <i class="fas fa-lock text-brandgreen mr-1"></i> Your details stay private. We reply on WhatsApp within 15 minutes.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY CHOOSE US ================= -->
+  <section class="py-16 md:py-24 bg-cream relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="inline-block text-xs font-bold tracking-widest text-brandgreen uppercase mb-3 glass px-3 py-1 rounded-full border border-brandgreen/30">Our Promise</span>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900">Why We <span class="green-text-gradient">Lead the Market</span></h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <div class="gradient-border card-glow p-6 text-center" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-16 h-16 mx-auto rounded-2xl green-gradient flex items-center justify-center mb-4 shadow-md shadow-brandgreen/30 animate-float">
+            <i class="fas fa-shield-alt text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-base mb-2 text-slate-900">1-Year Warranty</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Every ceiling is backed by our written 1-Year Warranty — total peace of mind.</p>
+        </div>
+
+        <div class="gradient-border card-glow p-6 text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-16 h-16 mx-auto rounded-2xl green-gradient flex items-center justify-center mb-4 shadow-md shadow-brandgreen/30 animate-float-delayed">
+            <i class="fas fa-handshake text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-base mb-2 text-slate-900">Transparent Process</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Clear, honest discussions from design to handover. What we agree is exactly what you get.</p>
+        </div>
+
+        <div class="gradient-border card-glow p-6 text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-16 h-16 mx-auto rounded-2xl green-gradient flex items-center justify-center mb-4 shadow-md shadow-brandgreen/30 animate-float-slow">
+            <i class="fas fa-broom text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-base mb-2 text-slate-900">Dust-Free Clean Handover</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">We cover, protect and clean daily. Your home stays spotless throughout.</p>
+        </div>
+
+        <div class="gradient-border card-glow p-6 text-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-16 h-16 mx-auto rounded-2xl green-gradient flex items-center justify-center mb-4 shadow-md shadow-brandgreen/30 animate-float">
+            <i class="fas fa-user-tie text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-base mb-2 text-slate-900">Expert Supervision</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Arbaaz personally oversees every project — from design to final handover.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= REVIEWS ================= -->
+  <section class="py-16 md:py-24 bg-white relative overflow-hidden">
+    <div class="absolute top-1/2 right-[-140px] w-[400px] h-[400px] bg-brandgreen/5 rounded-full blur-[110px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center mb-10" data-aos="fade-up">
+        <span class="inline-block text-xs font-bold tracking-widest text-brandgreen uppercase mb-3 glass px-3 py-1 rounded-full border border-brandgreen/30">Testimonials</span>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900">What Our <span class="green-text-gradient">Clients Say</span></h2>
+      </div>
+
+      <div class="flex overflow-x-auto no-scrollbar gap-5 pb-6 snap-x" data-aos="fade-up" data-aos-delay="120">
+
+        <!-- Review 1 -->
+        <div class="min-w-[300px] sm:min-w-[360px] bg-white p-6 rounded-2xl border border-slate-200 snap-start card-glow">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ritu Sharma"
+                 class="w-12 h-12 rounded-full object-cover border-2 border-brandgreen shadow-sm" loading="lazy" decoding="async"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop';">
+            <div class="flex-1">
+              <p class="font-bold text-sm text-slate-900">Ritu Sharma</p>
+              <p class="text-[11px] text-slate-500">Mumbai</p>
+            </div>
+            <div class="text-brandgreen text-sm">★★★★★</div>
+          </div>
+          <p class="text-slate-600 text-sm leading-relaxed italic">"Arbaaz and team did a fantastic job with our living room false ceiling. The lighting looks absolutely stunning. Highly recommended!"</p>
+          <img src="https://i.ibb.co/fdCFQShq/image1.jpg" alt="Living room project by Arbaaz"
+               class="mt-4 w-full h-28 object-cover rounded-xl border border-slate-200" loading="lazy" decoding="async"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=500&auto=format&fit=crop';">
+        </div>
+
+        <!-- Review 2 -->
+        <div class="min-w-[300px] sm:min-w-[360px] bg-white p-6 rounded-2xl border border-slate-200 snap-start card-glow">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Amit Verma"
+                 class="w-12 h-12 rounded-full object-cover border-2 border-brandgreen shadow-sm" loading="lazy" decoding="async"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop';">
+            <div class="flex-1">
+              <p class="font-bold text-sm text-slate-900">Amit Verma</p>
+              <p class="text-[11px] text-slate-500">Thane</p>
+            </div>
+            <div class="text-brandgreen text-sm">★★★★★</div>
+          </div>
+          <p class="text-slate-600 text-sm leading-relaxed italic">"Very professional and neat work. They completed our bedroom POP design within 3 days without any mess. The 1-Year Warranty gave us real confidence."</p>
+          <img src="https://i.ibb.co/3YhQGs0Z/image2.jpg" alt="Bedroom POP project by Arbaaz"
+               class="mt-4 w-full h-28 object-cover rounded-xl border border-slate-200" loading="lazy" decoding="async"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1615876234886-fd9a39fda97f?q=80&w=500&auto=format&fit=crop';">
+        </div>
+
+        <!-- Review 3 -->
+        <div class="min-w-[300px] sm:min-w-[360px] bg-white p-6 rounded-2xl border border-slate-200 snap-start card-glow">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Neha Kapoor"
+                 class="w-12 h-12 rounded-full object-cover border-2 border-brandgreen shadow-sm" loading="lazy" decoding="async"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop';">
+            <div class="flex-1">
+              <p class="font-bold text-sm text-slate-900">Neha Kapoor</p>
+              <p class="text-[11px] text-slate-500">Bandra</p>
+            </div>
+            <div class="text-brandgreen text-sm">★★★★★</div>
+          </div>
+          <p class="text-slate-600 text-sm leading-relaxed italic">"Loved the cove lighting work in our hallway. Transparent process and superb finishing. 5 stars without a doubt!"</p>
+          <img src="https://i.ibb.co/C5Grfn9b/image3.jpg" alt="Cove lighting project by Arbaaz"
+               class="mt-4 w-full h-28 object-cover rounded-xl border border-slate-200" loading="lazy" decoding="async"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=500&auto=format&fit=crop';">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="py-16 md:py-24 bg-cream">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-10" data-aos="fade-up">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900">Frequently Asked <span class="green-text-gradient">Questions</span></h2>
+      </div>
+
+      <div class="space-y-3" id="faqContainer">
+
+        <div class="faq-item glass rounded-2xl border border-slate-200 overflow-hidden transition-all duration-300" data-aos="fade-up" data-aos-delay="0">
+          <button class="faq-question w-full flex items-center justify-between p-5 text-left font-semibold text-sm sm:text-base text-slate-800 hover:bg-brandgreen/5 transition-colors">
+            <span><i class="fas fa-shield-alt text-brandgreen mr-2"></i>How durable is a gypsum false ceiling?</span>
+            <i class="fas fa-chevron-down faq-icon text-brandgreen text-sm shrink-0"></i>
+          </button>
+          <div class="faq-answer px-5 text-slate-500 text-sm leading-relaxed">
+            With Saint-Gobain gypsum and proper installation, our false ceilings last 15+ years with minimal maintenance. They are moisture-resistant, termite-proof, and backed by our 1-Year Warranty.
+          </div>
+        </div>
+
+        <div class="faq-item glass rounded-2xl border border-slate-200 overflow-hidden transition-all duration-300" data-aos="fade-up" data-aos-delay="80">
+          <button class="faq-question w-full flex items-center justify-between p-5 text-left font-semibold text-sm sm:text-base text-slate-800 hover:bg-brandgreen/5 transition-colors">
+            <span><i class="fas fa-tint text-brandgreen mr-2"></i>Is POP / gypsum water-resistant for bathrooms?</span>
+            <i class="fas fa-chevron-down faq-icon text-brandgreen text-sm shrink-0"></i>
+          </button>
+          <div class="faq-answer px-5 text-slate-500 text-sm leading-relaxed">
+            We use moisture-resistant (MR) gypsum boards specifically for bathrooms and kitchens. Combined with proper sealing and ventilation, they perform excellently even in high-humidity zones.
+          </div>
+        </div>
+
+        <div class="faq-item glass rounded-2xl border border-slate-200 overflow-hidden transition-all duration-300" data-aos="fade-up" data-aos-delay="160">
+          <button class="faq-question w-full flex items-center justify-between p-5 text-left font-semibold text-sm sm:text-base text-slate-800 hover:bg-brandgreen/5 transition-colors">
+            <span><i class="fas fa-clock text-brandgreen mr-2"></i>How long does a typical false ceiling take?</span>
+            <i class="fas fa-chevron-down faq-icon text-brandgreen text-sm shrink-0"></i>
+          </button>
+          <div class="faq-answer px-5 text-slate-500 text-sm leading-relaxed">
+            A standard room (100–150 sq.ft.) takes 3–5 working days. Larger living areas with cove lighting and CNC work may take 7–10 days. We always commit to a timeline upfront and deliver on it.
+          </div>
+        </div>
+
+        <div class="faq-item glass rounded-2xl border border-slate-200 overflow-hidden transition-all duration-300" data-aos="fade-up" data-aos-delay="240">
+          <button class="faq-question w-full flex items-center justify-between p-5 text-left font-semibold text-sm sm:text-base text-slate-800 hover:bg-brandgreen/5 transition-colors">
+            <span><i class="fas fa-circle-question text-brandgreen mr-2"></i>How do I get started with my ceiling?</span>
+            <i class="fas fa-chevron-down faq-icon text-brandgreen text-sm shrink-0"></i>
+          </button>
+          <div class="faq-answer px-5 text-slate-500 text-sm leading-relaxed">
+            Simply book a free site visit using the form above, or tap any WhatsApp button. We'll visit, measure, and present a personalised 3D design concept along with a clear written scope — all details are discussed personally with you.
+          </div>
+        </div>
+
+        <div class="faq-item glass rounded-2xl border border-slate-200 overflow-hidden transition-all duration-300" data-aos="fade-up" data-aos-delay="320">
+          <button class="faq-question w-full flex items-center justify-between p-5 text-left font-semibold text-sm sm:text-base text-slate-800 hover:bg-brandgreen/5 transition-colors">
+            <span><i class="fas fa-globe-asia text-brandgreen mr-2"></i>Do you work outside my city?</span>
+            <i class="fas fa-chevron-down faq-icon text-brandgreen text-sm shrink-0"></i>
+          </button>
+          <div class="faq-answer px-5 text-slate-500 text-sm leading-relaxed">
+            Yes — our services are available all over India. Share your location on WhatsApp at 9152165328 and we'll confirm the nearest available team and visit slot.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT & FORM ================= -->
+  <section id="contact" class="py-16 md:py-24 bg-white relative overflow-hidden">
+    <div class="absolute bottom-[-140px] left-[-120px] w-[420px] h-[420px] bg-brandgreen/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="inline-block text-xs font-bold tracking-widest text-brandgreen uppercase mb-3 glass px-3 py-1 rounded-full border border-brandgreen/30">Get Started</span>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900">Let's Design Your <span class="green-text-gradient">Dream Ceiling</span></h2>
+        <p class="text-slate-500 mt-3 max-w-2xl mx-auto text-sm sm:text-base">Talk to us directly or send your requirement — we respond within 15 minutes.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
+
+        <!-- Direct Contact -->
+        <div data-aos="fade-right" data-aos-duration="900">
+          <div class="gradient-border p-6 sm:p-8 shadow-sm">
+            <h3 class="font-bold text-xl mb-5 text-slate-900">Direct Contact</h3>
+            <div class="space-y-5">
+
+              <a href="tel:9152165328" class="flex items-center gap-4 group">
+                <div class="w-12 h-12 rounded-xl green-gradient flex items-center justify-center flex-shrink-0 shadow-md shadow-brandgreen/30 group-hover:scale-110 transition-transform">
+                  <i class="fas fa-phone-alt text-white text-lg"></i>
+                </div>
+                <div>
+                  <p class="text-xs text-slate-500">Call Us Directly</p>
+                  <p class="font-bold text-slate-900 group-hover:text-brandgreen transition-colors">9152165328</p>
+                </div>
+              </a>
+
+              <a href="https://wa.me/919152165328?text=Hi%20Arbaaz%2C%20I%20am%20interested%20in%20False%20Ceiling%20and%20POP%20Designing%20work.%20Please%20share%20details."
+                 target="_blank" rel="noopener" class="flex items-center gap-4 group">
+                <div class="w-12 h-12 rounded-xl bg-[#25D366] flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-110 transition-transform">
+                  <i class="fab fa-whatsapp text-white text-xl"></i>
+                </div>
+                <div>
+                  <p class="text-xs text-slate-500">WhatsApp Chat</p>
+                  <p class="font-bold text-slate-900 group-hover:text-[#25D366] transition-colors">9152165328</p>
+                </div>
+              </a>
+
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl glass border border-brandgreen/30 flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-globe-asia text-brandgreen text-lg"></i>
+                </div>
+                <div>
+                  <p class="text-xs text-slate-500">Service Areas</p>
+                  <p class="font-semibold text-sm text-slate-800">Available All Over India</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl glass border border-brandgreen/30 flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-shield-alt text-brandgreen text-lg"></i>
+                </div>
+                <div>
+                  <p class="text-xs text-slate-500">Our Guarantee</p>
+                  <p class="font-semibold text-sm text-slate-800">1-Year Warranty on Every Project</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="gradient-border p-6 sm:p-8 shadow-sm" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+          <h3 class="font-bold text-xl mb-2 text-slate-900">Send a Quick Inquiry</h3>
+          <p class="text-slate-500 text-sm mb-6">Fill this form and we'll call you back shortly.</p>
+
+          <form id="contactForm" class="space-y-4" novalidate>
+            <div>
+              <label for="cName" class="block text-xs font-semibold mb-1.5 text-slate-700">Full Name *</label>
+              <input type="text" id="cName" placeholder="e.g. Rahul Sharma"
+                     class="w-full bg-cream border border-slate-300 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 focus:border-brandgreen focus:ring-2 focus:ring-brandgreen/20 outline-none transition-all text-sm"
+                     required>
+            </div>
+            <div>
+              <label for="cPhone" class="block text-xs font-semibold mb-1.5 text-slate-700">Phone Number *</label>
+              <input type="tel" id="cPhone" placeholder="e.g. 9152165328"
+                     class="w-full bg-cream border border-slate-300 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 focus:border-brandgreen focus:ring-2 focus:ring-brandgreen/20 outline-none transition-all text-sm"
+                     required>
+            </div>
+            <div>
+              <label for="cCity" class="block text-xs font-semibold mb-1.5 text-slate-700">City / Area</label>
+              <input type="text" id="cCity" placeholder="e.g. Mumbai"
+                     class="w-full bg-cream border border-slate-300 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 focus:border-brandgreen focus:ring-2 focus:ring-brandgreen/20 outline-none transition-all text-sm">
+            </div>
+            <div>
+              <label for="cMessage" class="block text-xs font-semibold mb-1.5 text-slate-700">Your Requirement</label>
+              <textarea id="cMessage" rows="3" placeholder="e.g. Need cove lighting false ceiling for living room"
+                        class="w-full bg-cream border border-slate-300 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 focus:border-brandgreen focus:ring-2 focus:ring-brandgreen/20 outline-none transition-all text-sm resize-none"></textarea>
+            </div>
+
+            <button type="submit"
+                    class="btn-glow btn-shine w-full green-gradient text-white font-bold py-4 rounded-xl shadow-lg shadow-brandgreen/30 hover:shadow-2xl hover:shadow-brandgreen/40 hover:scale-[1.01] transition-all duration-300 flex items-center justify-center gap-2">
+              <i class="fas fa-paper-plane"></i> Send Inquiry Now
+            </button>
+
+            <p id="formFeedback" class="text-sm text-brandgreen mt-2 hidden text-center font-semibold">
+              <i class="fas fa-check-circle mr-1"></i> Thank you! We'll call you back shortly.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="border-t border-slate-200 py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+
+        <div class="sm:col-span-2 lg:col-span-1">
+          <div class="flex items-center gap-2.5 mb-4">
+            <div class="w-9 h-9 rounded-xl green-gradient flex items-center justify-center shadow-md shadow-brandgreen/30">
+              <i class="fas fa-crown text-white"></i>
+            </div>
+            <div>
+              <p class="font-extrabold text-sm text-slate-900">ARBAAZ</p>
+              <p class="text-[10px] text-brandgreen font-semibold tracking-wider">FALSE CEILING &amp; POP</p>
+            </div>
+          </div>
+          <p class="text-slate-500 text-sm leading-relaxed">Crafting luxury false ceilings and POP designs with a 1-Year Warranty. Now serving clients all over India.</p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-sm mb-4 text-brandgreen">Services</h4>
+          <ul class="space-y-2 text-sm text-slate-500">
+            <li><a href="#services" class="hover:text-brandgreen transition">Gypsum False Ceiling</a></li>
+            <li><a href="#services" class="hover:text-brandgreen transition">POP Moulding</a></li>
+            <li><a href="#services" class="hover:text-brandgreen transition">Cove Lighting</a></li>
+            <li><a href="#services" class="hover:text-brandgreen transition">CNC Jaali Work</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-sm mb-4 text-brandgreen">Quick Links</h4>
+          <ul class="space-y-2 text-sm text-slate-500">
+            <li><a href="#gallery" class="hover:text-brandgreen transition">Portfolio</a></li>
+            <li><a href="#book" class="hover:text-brandgreen transition">Book Free Site Visit</a></li>
+            <li><a href="#book" class="hover:text-brandgreen transition">Request 3D Design</a></li>
+            <li><a href="#contact" class="hover:text-brandgreen transition">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-sm mb-4 text-brandgreen">Contact</h4>
+          <ul class="space-y-2 text-sm text-slate-500">
+            <li><a href="tel:9152165328" class="hover:text-brandgreen transition"><i class="fas fa-phone-alt text-brandgreen mr-2"></i> 9152165328</a></li>
+            <li><a href="https://wa.me/919152165328?text=Hi%20Arbaaz%2C%20I%20am%20interested%20in%20False%20Ceiling%20and%20POP%20Designing%20work.%20Please%20share%20details." target="_blank" rel="noopener" class="hover:text-brandgreen transition"><i class="fab fa-whatsapp text-brandgreen mr-2"></i> 9152165328</a></li>
+            <li><i class="fas fa-globe text-brandgreen mr-2"></i> All Over India</li>
+            <li><i class="fas fa-shield-alt text-brandgreen mr-2"></i> 1-Year Warranty</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-slate-200 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400 gap-3">
+        <p>© 2025 ARBAAZ FALSE CEILING &amp; POP DESIGNING. All rights reserved.</p>
+        <div class="flex gap-5">
+          <a href="#" class="hover:text-brandgreen transition">Privacy Policy</a>
+          <a href="#" class="hover:text-brandgreen transition">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= STICKY MOBILE BOTTOM BAR ================= -->
+  <div class="mobile-sticky-bar fixed bottom-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-t border-brandgreen/30 shadow-[0_-10px_30px_-12px_rgba(15,118,110,0.45)]">
+    <a href="tel:9152165328" class="flex-1 flex items-center justify-center gap-2 py-4 text-brandgreen font-bold text-sm active:bg-brandgreen/10 transition">
+      <i class="fas fa-phone-alt text-lg"></i> Call Us
+    </a>
+    <div class="w-px bg-brandgreen/30"></div>
+    <a href="https://wa.me/919152165328?text=Hi%20Arbaaz%2C%20I%20am%20interested%20in%20False%20Ceiling%20and%20POP%20Designing%20work.%20Please%20share%20details."
+       target="_blank" rel="noopener"
+       class="flex-1 flex items-center justify-center gap-2 py-4 text-[#25D366] font-bold text-sm active:bg-[#25D366]/10 transition">
+      <i class="fab fa-whatsapp text-lg"></i> WhatsApp
+    </a>
+  </div>
+
+  <!-- ================= FLOATING WHATSAPP WIDGET ================= -->
+  <a href="https://wa.me/919152165328?text=Hi%20Arbaaz%2C%20I%20am%20interested%20in%20False%20Ceiling%20and%20POP%20Designing%20work.%20Please%20share%20details."
+     target="_blank" rel="noopener" aria-label="Chat on WhatsApp"
+     class="fixed bottom-24 md:bottom-6 right-4 md:right-6 z-50 bg-[#25D366] w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-[0_18px_40px_-12px_rgba(37,211,102,0.85)] hover:scale-110 active:scale-95 transition-transform duration-300">
+    <span class="absolute inset-0 rounded-full bg-[#25D366] opacity-70 animate-ping"></span>
+    <span class="absolute inset-0 rounded-full bg-[#25D366] opacity-40 animate-ping" style="animation-delay: .9s;"></span>
+    <i class="fab fa-whatsapp text-white text-3xl md:text-4xl relative z-10"></i>
+  </a>
+
+  <!-- ================= AOS SCRIPT ================= -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- ================= MAIN JAVASCRIPT ================= -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      /* ============ 1. AOS INIT ============ */
+      if (window.AOS) {
+        AOS.init({
+          duration: 850,
+          easing: 'ease-out-cubic',
+          once: true,
+          offset: 60,
+          disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        });
+      }
+
+      /* ============ 2. SCROLL PROGRESS BAR ============ */
+      const progressBar = document.getElementById('scrollProgress');
+      let ticking = false;
+      function updateProgress() {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const ratio = docHeight > 0 ? Math.min(scrollTop / docHeight, 1) : 0;
+        if (progressBar) progressBar.style.transform = 'scaleX(' + ratio + ')';
+        ticking = false;
+      }
+      window.addEventListener('scroll', function () {
+        if (!ticking) {
+          window.requestAnimationFrame(updateProgress);
+          ticking = true;
+        }
+      }, { passive: true });
+      updateProgress();
+
+      /* ============ 3. ANIMATED COUNTERS ============ */
+      const counters = document.querySelectorAll('[data-count]');
+      function animateCounter(el) {
+        const target = parseFloat(el.dataset.count) || 0;
+        const decimals = parseInt(el.dataset.decimals || '0', 10);
+        const suffix = el.dataset.suffix || '';
+        const duration = 1600;
+        const start = performance.now();
+        function tick(now) {
+          const p = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = (target * eased).toFixed(decimals) + suffix;
+          if (p < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      }
+      if ('IntersectionObserver' in window) {
+        const counterObserver = new IntersectionObserver(function (entries, obs) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              animateCounter(entry.target);
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.5 });
+        counters.forEach(function (c) { counterObserver.observe(c); });
+      } else {
+        counters.forEach(function (c) {
+          c.textContent = c.dataset.count + (c.dataset.suffix || '');
+        });
+      }
+
+      /* ============ 4. GALLERY FILTER ============ */
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+
+      filterButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          filterButtons.forEach(function (b) {
+            b.classList.remove('green-gradient', 'text-white', 'shadow-md', 'active');
+            b.classList.add('glass', 'border', 'border-slate-300', 'text-slate-700');
+          });
+          this.classList.add('green-gradient', 'text-white', 'shadow-md', 'active');
+          this.classList.remove('glass', 'border', 'border-slate-300', 'text-slate-700');
+
+          const filter = this.dataset.filter;
+          galleryItems.forEach(function (item) {
+            const show = (filter === 'all' || item.dataset.category === filter);
+            item.style.display = show ? 'block' : 'none';
+            if (show) {
+              item.classList.remove('animate-in');
+              void item.offsetWidth; /* force reflow to replay animation */
+              item.classList.add('animate-in');
+            }
+          });
+          if (window.AOS) AOS.refresh();
+        });
+      });
+
+      /* ============ 5. 3D TILT ON GALLERY (desktop only) ============ */
+      const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      if (finePointer && !reducedMotion) {
+        document.querySelectorAll('.tilt-card').forEach(function (card) {
+          card.addEventListener('mousemove', function (e) {
+            const rect = card.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width - 0.5;
+            const y = (e.clientY - rect.top) / rect.height - 0.5;
+            const rotateX = (-y * 9).toFixed(2);
+            const rotateY = (x * 9).toFixed(2);
+            card.style.transform = 'perspective(950px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) scale(1.035)';
+          });
+          card.addEventListener('mouseleave', function () {
+            card.style.transform = '';
+          });
+        });
+      }
+
+      /* ============ 6. FAQ ACCORDION ============ */
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(function (item) {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', function () {
+          const isActive = item.classList.contains('active');
+          faqItems.forEach(function (i) { i.classList.remove('active'); });
+          if (!isActive) item.classList.add('active');
+        });
+      });
+
+      /* ============ 7. BOOKING FORM -> WHATSAPP ============ */
+      const bookingForm = document.getElementById('bookingForm');
+      const bookingFeedback = document.getElementById('bookingFeedback');
+      const bDateInput = document.getElementById('bDate');
+
+      if (bDateInput) {
+        const today = new Date();
+        const yyyy = today.getFullYear();
+        const mm = String(today.getMonth() + 1).padStart(2, '0');
+        const dd = String(today.getDate()).padStart(2, '0');
+        bDateInput.min = yyyy + '-' + mm + '-' + dd;
+      }
+
+      if (bookingForm) {
+        bookingForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById('bName').value.trim();
+          const phone = document.getElementById('bPhone').value.trim();
+          const city = document.getElementById('bCity').value.trim();
+          const date = document.getElementById('bDate').value;
+          const need = document.getElementById('bNeed').value;
+          const message = document.getElementById('bMessage').value.trim();
+
+          if (!name || !phone) {
+            alert('Please fill in your name and phone number.');
+            return;
+          }
+
+          if (bookingFeedback) bookingFeedback.classList.remove('hidden');
+
+          const waMessage =
+            'Hi Arbaaz, I am interested in False Ceiling and POP Designing work. Please share details.' +
+            '%0A%0A*--- FREE SITE VISIT / 3D DESIGN REQUEST ---*' +
+            '%0A%F0%9F%91%A4 *Name:* ' + encodeURIComponent(name) +
+            '%0A%F0%9F%93%9E *Phone:* ' + encodeURIComponent(phone) +
+            '%0A%F0%9F%93%8D *City/Area:* ' + encodeURIComponent(city || 'Not specified') +
+            '%0A%F0%9F%93%85 *Preferred Visit Date:* ' + encodeURIComponent(date || 'Flexible') +
+            '%0A%F0%9F%8E%A8 *Requirement:* ' + encodeURIComponent(need) +
+            '%0A%F0%9F%92%AC *Details:* ' + encodeURIComponent(message || 'Not specified') +
+            '%0A%0APlease confirm my free site visit.';
+
+          setTimeout(function () {
+            window.open('https://wa.me/919152165328?text=' + waMessage, '_blank');
+          }, 500);
+
+          bookingForm.reset();
+          setTimeout(function () {
+            if (bookingFeedback) bookingFeedback.classList.add('hidden');
+          }, 6000);
+        });
+      }
+
+      /* ============ 8. CONTACT FORM -> WHATSAPP ============ */
+      const contactForm = document.getElementById('contactForm');
+      const formFeedback = document.getElementById('formFeedback');
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById('cName').value.trim();
+          const phone = document.getElementById('cPhone').value.trim();
+          const city = document.getElementById('cCity').value.trim();
+          const message = document.getElementById('cMessage').value.trim();
+
+          if (!name || !phone) {
+            alert('Please fill in your name and phone number.');
+            return;
+          }
+
+          if (formFeedback) formFeedback.classList.remove('hidden');
+
+          const waMessage =
+            'Hi Arbaaz, I am interested in False Ceiling and POP Designing work. Please share details.' +
+            '%0A%0A*--- NEW WEBSITE INQUIRY ---*' +
+            '%0A%F0%9F%91%A4 *Name:* ' + encodeURIComponent(name) +
+            '%0A%F0%9F%93%9E *Phone:* ' + encodeURIComponent(phone) +
+            '%0A%F0%9F%93%8D *City:* ' + encodeURIComponent(city || 'Not specified') +
+            '%0A%F0%9F%92%AC *Requirement:* ' + encodeURIComponent(message || 'Not specified') +
+            '%0A%0APlease contact me.';
+
+          setTimeout(function () {
+            window.open('https://wa.me/919152165328?text=' + waMessage, '_blank');
+          }, 500);
+
+          contactForm.reset();
+          setTimeout(function () {
+            if (formFeedback) formFeedback.classList.add('hidden');
+          }, 6000);
+        });
+      }
+
+      /* ============ 9. SMOOTH SCROLL WITH HEADER OFFSET ============ */
+      document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+        anchor.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          if (href !== '#' && href.length > 1) {
+            const target = document.querySelector(href);
+            if (target) {
+              e.preventDefault();
+              const headerOffset = 90;
+              const elementPosition = target.getBoundingClientRect().top;
+              const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+              window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+            }
+          }
+        });
+      });
+
+    });
+  </script>
+</body>
+</html>
